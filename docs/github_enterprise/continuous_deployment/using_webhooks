@@ -1,0 +1,12 @@
+## Set up GitHub Enterprise Continuous Deployment using Webhooks
+
+### Build project and push the resulting docker image artifact / package to GitHub packages
+### Step 1: Install a Webhook Receiver
+
+#### GitHub recommends pinning actions to a commit SHA. To get a newer version, you will need to update the SHA. You can also reference a tag or branch, but the action may change without warning.
+```bash
+
+```
+
+#### Viewing a repository's packages
+https://docs.github.com/en/packages/learn-github-packages/viewing-packages#viewing-a-repositorys-packages
