@@ -35,6 +35,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Print working directory
+        run: pwd
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
