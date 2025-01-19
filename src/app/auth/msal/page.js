@@ -6,7 +6,7 @@ import { useIsAuthenticated, useMsal } from "@azure/msal-react";
 import { logger } from "@/lib/default-logger";
 import { setActiveAccount } from "@/lib/msal";
 import {paths} from "@/paths";
-import {getNotifications} from "@/lib/api/notification";
+import {getNotifications} from "@/api/notification";
 
 const MsalCallbackHandler = () => {
 	const { instance, accounts } = useMsal();
