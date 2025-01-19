@@ -17,6 +17,6 @@ export const getNotifications = async (access_token) => {
     return response.data;
   } catch (error) {
     console.error('Failed to get user notifications.');
-    return Promise.reject(error);
+    throw error;
   }
 };
