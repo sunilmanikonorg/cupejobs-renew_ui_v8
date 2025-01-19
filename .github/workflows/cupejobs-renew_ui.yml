@@ -25,6 +25,13 @@ jobs:
 
       - name: Verify repository files
         run: ls -R
+
+      - name: Build and push Docker image
+        id: push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
 #      - name: Use Node.js ${{ matrix.node-version }}
 #        uses: actions/setup-node@v4
 #        with:
